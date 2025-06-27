@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gerador de Senhas</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Gerador de Senhas</h1>
+
+      <select name="Tipo de Senha" id="tipo">
+        <option value="">Tipo</option>
+        <option value="letras">Letras</option>
+        <option value="numeros">Números</option>
+        <option value="let_num">Letras e Números</option>
+        <option value="todos">Todos os Caracteres</option>
+      </select>
+
+      <input
+        type="number"
+        id="comprimento"
+        placeholder="Comprimento da senha"
+        min="1"
+      />
+      <button id="gerar">Gerar Senha</button>
+      <div id="senha"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
